@@ -7,11 +7,11 @@ from airflow.models import Variable
 from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 
-# Конфигурация DAG
+
 OWNER = "Oleksandii"
 DAG_ID = "raw_from_api_to_s3"
 
-# Используемые таблицы в DAG
+
 LAYER = "raw"
 SOURCE = "earthquake"
 

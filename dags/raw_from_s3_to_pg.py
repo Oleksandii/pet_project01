@@ -8,11 +8,10 @@ from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from airflow.sensors.external_task import ExternalTaskSensor
 
-# Конфигурация DAG
+
 OWNER = "Oleksandii"
 DAG_ID = "raw_from_s3_to_pg"
 
-# Используемые таблицы в DAG
 LAYER = "raw"
 SOURCE = "earthquake"
 SCHEMA = "ods"
