@@ -33,7 +33,7 @@ SHORT_DESCRIPTION = "SHORT DESCRIPTION"
 
 args = {
     "owner": OWNER,
-    "start_date": pendulum.datetime(2025, 5, 1, tz="Europe/Moscow"),
+    "start_date": pendulum.datetime(2025, 5, 1, tz="Europe/Kyiv"),
     "catchup": True,
     "retries": 3,
     "retry_delay": pendulum.duration(hours=1),
@@ -69,7 +69,7 @@ def get_and_transfer_raw_data_to_ods_pg(**context):
         CREATE SECRET dwh_postgres (
             TYPE postgres,
             HOST 'postgres_dwh',
-            PORT 5433,
+            PORT 5432,
             DATABASE postgres,
             USER 'postgres',
             PASSWORD '{PASSWORD}'
